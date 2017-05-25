@@ -1,0 +1,20 @@
+<!-- app/templates/admin/contacts.hbs -->
+
+<h1>Invitations</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>E-Mail</th>
+      <th>Messages</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |contact|}}
+    <tr>
+      <th>{{contact.email}}</th>
+      <td>{{contact.message}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
